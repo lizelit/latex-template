@@ -1,0 +1,125 @@
+\documentclass[a4paper,11pt]{ltjsarticle}  % LuaLaTeX用日本語クラス
+
+% LuaLaTeX用日本語設定
+\usepackage{luatexja}
+\usepackage[hiragino-pron]{luatexja-preset}  % macOSのヒラギノフォント
+% または \usepackage[ipaex]{luatexja-preset}  % IPAexフォント
+
+% ページレイアウト
+\usepackage[margin=25mm]{geometry}
+
+% 数式
+\usepackage{amsmath, amssymb}
+
+% 画像
+\usepackage{graphicx}
+\usepackage{here}
+\usepackage{float}
+
+% 表
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% SI単位系
+\usepackage{siunitx}
+
+% コード表示
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+}
+
+% キャプション
+\usepackage{caption}
+\usepackage{subcaption}
+
+% ハイパーリンク
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue,
+}
+
+% タイトル情報
+\title{実験レポート: [実験タイトル]}
+\author{学籍番号: XXXXXXX \\ 氏名: 山田太郎}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{目的}
+この実験の目的を記述する。
+
+\section{原理}
+実験の理論的背景や原理を説明する。
+
+必要に応じて数式を使用：
+\begin{equation}
+  F = ma
+\end{equation}
+
+\section{実験方法}
+\subsection{使用した器具}
+\begin{itemize}
+  \item 器具1
+  \item 器具2
+  \item 器具3
+\end{itemize}
+
+\subsection{手順}
+\begin{enumerate}
+  \item 手順1を実行する
+  \item 手順2を実行する
+  \item 手順3を実行する
+\end{enumerate}
+
+\section{結果}
+\subsection{測定データ}
+表\ref{tab:data}に測定結果を示す。
+
+\begin{table}[H]
+  \centering
+  \caption{測定結果}
+  \label{tab:data}
+  \begin{tabular}{ccc}
+    \toprule
+    試行 & 測定値1 [\si{\metre}] & 測定値2 [\si{\second}] \\
+    \midrule
+    1 & 1.23 & 4.56 \\
+    2 & 1.45 & 4.32 \\
+    3 & 1.34 & 4.44 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{グラフ}
+% 画像を挿入する場合（figures/ディレクトリに保存）
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.7\textwidth]{figures/graph.pdf}
+%   \caption{実験結果のグラフ}
+%   \label{fig:graph}
+% \end{figure}
+
+\section{考察}
+結果から考えられることを記述する。
+
+\section{結論}
+実験から得られた結論をまとめる。
+
+\section*{参考文献}
+\begin{enumerate}
+  \item 参考文献1
+  \item 参考文献2
+\end{enumerate}
+
+\end{document}
