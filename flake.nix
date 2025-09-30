@@ -14,29 +14,7 @@
         # レポート用のTeXパッケージ（LuaLaTeX対応）
         tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) 
-            scheme-full
-            # LuaLaTeX + 日本語サポート
-            luatex
-            luatexja
-            luatexbase
-            collection-langjapanese
-            # コンパイルツール
-            latexmk
-            # レポートでよく使うパッケージ
-            listings       # コード表示
-            xcolor         # 色付き
-            here           # 図の配置制御
-            float          # 図表の配置
-            caption        # キャプション
-            subcaption     # サブキャプション
-            graphicx       # 画像
-            amsmath        # 数式
-            amssymb        # 数学記号
-            geometry       # ページレイアウト
-            hyperref       # ハイパーリンク
-            booktabs       # 綺麗な表
-            multirow       # 表の結合
-            siunitx        # SI単位系
+            scheme-full      # SI単位系
             ;
         };
       in
