@@ -14,7 +14,7 @@
         # レポート用のTeXパッケージ（LuaLaTeX対応）
         tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) 
-            scheme-medium
+            scheme-full
             # LuaLaTeX + 日本語サポート
             luatex
             luatexja
