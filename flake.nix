@@ -31,6 +31,8 @@
             gnumake
           ];
 
+          shell = "${pkgs.zsh}/bin/zsh";
+
           shellHook = ''
             echo "LaTeX Lab Report Environment"
             echo ""
