@@ -15,6 +15,11 @@
         tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) 
             scheme-full      # SI単位系
+            luatex
+            luatexja
+            luatexbase
+            collection-langjapanese
+            latexmk
             ;
         };
       in
