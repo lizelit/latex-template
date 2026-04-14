@@ -1,12 +1,23 @@
-\documentclass[a4paper,11pt]{ltjsarticle}
+\documentclass[a4paper,11pt]{ltjsarticle}  
+
+% LuaLaTeX用日本語設定
 \usepackage{luatexja}
+% 数式
 \usepackage{amsmath, amssymb}
+
+% 画像
 \usepackage{graphicx}
 \usepackage{here}
 \usepackage{float}
+
+% 表
 \usepackage{booktabs}
 \usepackage{multirow}
+
+% SI単位系
 \usepackage{siunitx}
+
+% コード表示
 \usepackage{listings}
 \usepackage{xcolor}
 \lstset{
@@ -16,9 +27,12 @@
   numbers=left,
   numberstyle=\tiny,
 }
+
+% キャプション
 \usepackage{caption}
 \usepackage{subcaption}
 
+% ハイパーリンク
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
@@ -27,6 +41,7 @@
   citecolor=blue,
 }
 
+% タイトル情報
 \title{\LaTeX テンプレート}
 \author{}
 \date{\today}
