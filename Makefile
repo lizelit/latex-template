@@ -6,3 +6,6 @@ watch:
 
 clean:
 	nix run .#clean
+
+open:
+	open -a Skim main.pdf

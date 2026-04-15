@@ -24,6 +24,9 @@
             collection-langjapanese
             collection-latexrecommended
             collection-latexextra
+            collection-pictures
+            biblatex
+            biber
             latexmk
             ;
         };
